@@ -1,0 +1,18 @@
+import objects.*
+
+test "La energia de Tom inicial es 80" {
+
+	assert.equals(80,tom.energia())
+
+}
+
+
+
+test "Tom es mas veloz que Jerry"{
+	assert.that(tom.esMasVeloz(jerry))
+}
+
+test "Tom corre a un raton"{
+	tom.correrA(jerry)
+	assert.notThat(tom.esMasVeloz(jerry))
+}
